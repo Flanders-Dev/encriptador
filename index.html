@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text Encryptor</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logoArea">
+                <div class="logo">
+                    <img src="/Assets/Vector.svg">
+                </div>
+            </div>
+            <div class="inputSpace">
+                <div class="inputBox">
+                    <label for="text-box"></label>
+                    <textarea type="text" id="text-box" placeholder="Ingrese su texto aquí" rows="12"></textarea>
+                </div>
+                <div class="warning">
+                    <div class="exclamationWarning">
+                        <i class="fa fa-exclamation-circle"></i>
+                    </div>
+                    <div class="textWarning">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="encryptButton">
+                        <button id="encrypt-button">Encriptar</button>
+                    </div>
+                    <div class="decryptButton">
+                        <button id="decrypt-button">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ouputSpace">
+                <div class="ouputOne">
+                    <div class="art">
+                        <img src="/Assets/Muñeco.svg">
+                    </div>
+                    <div class="textOuput">
+                        <div class="textSuperior">
+                            <p>Ningun mensaje fue encontrado</p>
+                        </div>
+                        <div class="textInferior">
+                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ouputTwo">
+                    <div class="encryptedBox">
+                        <label for="encrypted"></label>
+                        <textarea type="text" id="encrypted" value="" readonly class="encryptedText" rows="12"></textarea>
+                    </div>
+                    <div class="copyButton">
+                        <button id="copy-button">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="app.js"></script>
